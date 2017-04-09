@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+const orchestrator = require('../index.js');
+const pjson = require('../package.json');
+
+program
+  .description(pjson.description)
+  .version(pjson.version)
+  .option('-d, --dir [dir]', 'salesforce src directory path [./src]', './src')
+  .option('-s, --suffix [string]', 'test class suffix pattern [_TEST]', '_TEST')
+  .parse(process.argv);
+
+orchestrator(program, console.log)
+.catch(function(err){
+  console.log(err);
+});

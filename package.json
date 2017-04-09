@@ -1,0 +1,23 @@
+{
+  "name": "sfdc-specified-test",
+  "version": "1.0.0",
+  "description": "Salesforce specified test generation",
+  "keyword": [
+    "salesforce",
+    "specified-test",
+    "cli"
+  ],
+  "main": "index.js",
+  "bin": {
+    "spc": "./bin/cli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scolladon/sfdc-specified-test.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "xml2js": "^0.4.17"
+  }
+}
