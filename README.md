@@ -29,7 +29,7 @@ $ sst -h
 
   Usage: sst [options]
 
-  Profile & Permission Set user permission completion
+  Salesforce specified test generation
 
   Options:
 
